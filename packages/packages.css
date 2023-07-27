@@ -1,0 +1,116 @@
+main {
+    display: block;
+    box-sizing: border-box;
+    padding-top: 2rem;
+    width: 100%;
+    margin: auto;
+}
+
+.background {
+    background-image: url("../images/plans-background.jpg");
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.plan {
+    position: relative;
+    border: 5px solid forestgreen;
+    margin: 2rem 0;
+    width: 75%;
+}
+
+.plan a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 2rem;
+    line-height: 1.5rem;
+}
+
+.plan__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: black;
+}
+
+.plan__badge {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    margin: 1.2rem;
+    color: aliceblue;
+    background-color: brown;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.plan__overview {
+    font-weight: bold;
+    color: dimgray;
+}
+
+.plan__description {
+    border: 2px solid darkolivegreen;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: darkgreen;
+    background-color: aliceblue;
+}
+
+.plan--highlighted .plan__title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#plan-plus {
+    background-color: chartreuse;
+}
+
+#plan-free {
+    background-color: lightgreen;
+    float: right;
+    border-right: none;
+    border-left: 5px solid forestgreen;
+}
+
+#plan-premium {
+    background-color: darkgreen;
+}
+
+.plan:hover,
+.plan:active {
+    box-shadow: 2px 2px 4px lightgray;
+    border-color: brown;
+}
+
+#plan-free:hover,
+#plan-free:active {
+    border-left-color: brown;
+}
+
+@media (min-width: 44rem) {
+    main {
+        max-width: 90rem;
+        margin: 3rem auto;
+    }
+
+    .plan {
+        border-left: 5px solid forestgreen;;
+    }
+
+    #plan-free {
+        border-right: 5px solid forestgreen;;
+    }
+
+    #plan-free:hover,
+    #plan-free:active {
+        border-right-color: brown;
+    }
+}
